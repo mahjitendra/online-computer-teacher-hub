@@ -214,3 +214,64 @@ footer p {
     border: none;
     cursor: pointer;
 }
+
+/* Course Listing */
+.course-listing-container, .course-details-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    color: #333;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.course-card {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.course-card-thumbnail img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.course-card-content {
+    padding: 1.5rem;
+}
+
+/* Course Details */
+.course-details-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.course-header {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.course-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.enrolled-message {
+    font-weight: bold;
+    color: #28a745;
+}
+
+.btn-lg {
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+}

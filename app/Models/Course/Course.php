@@ -6,6 +6,12 @@ class Course {
         $this->db = new Database;
     }
 
+    public function getAllCourses(){
+        // We only want to show approved courses to students
+        $this->db->query("SELECT * FROM courses WHERE status = 'approved' ORDER BY created_at DESC");
+        return $this->db->resultSet();
+    }
+
     public function getCoursesByTeacher($teacher_id){
         $this->db->query('SELECT * FROM courses WHERE teacher_id = :teacher_id ORDER BY created_at DESC');
         $this->db->bind(':teacher_id', $teacher_id);

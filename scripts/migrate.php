@@ -10,6 +10,7 @@ require_once dirname(__FILE__) . '/../database/migrations/002_create_courses_tab
 require_once dirname(__FILE__) . '/../database/migrations/003_create_course_categories_table.php';
 require_once dirname(__FILE__) . '/../database/migrations/004_create_tutorials_table.php';
 require_once dirname(__FILE__) . '/../database/migrations/005_create_course_materials_table.php';
+require_once dirname(__FILE__) . '/../database/migrations/006_create_enrollments_table.php';
 
 // Run all migrations
 try {
@@ -32,6 +33,10 @@ try {
     $migration5 = new CreateCourseMaterialsTable();
     $migration5->up();
     echo "Migration for course_materials table created successfully.\n";
+
+    $migration6 = new CreateEnrollmentsTable();
+    $migration6->up();
+    echo "Migration for enrollments table created successfully.\n";
 
 } catch (Exception $e) {
     echo "Error running migration: " . $e->getMessage() . "\n";
