@@ -16,6 +16,7 @@ spl_autoload_register(function($className){
         __DIR__ . '/Models/Job/' . $className . '.php',
         __DIR__ . '/Models/Payment/' . $className . '.php',
         __DIR__ . '/Models/Exam/' . $className . '.php',
+        __DIR__ . '/Utils/' . $className . '.php',
         __DIR__ . '/Controllers/Web/' . $className . '.php',
         __DIR__ . '/Controllers/Teacher/' . $className . '.php',
         __DIR__ . '/Controllers/Api/' . $className . '.php'

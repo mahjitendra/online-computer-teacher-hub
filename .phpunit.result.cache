@@ -1,0 +1,1 @@
+{"version":1,"defects":{"UserTest::test_find_user_by_email":4},"times":{"ExampleTest::test_basic_assertion":0.002,"UserTest::test_find_user_by_email":0.12}}

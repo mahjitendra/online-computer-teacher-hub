@@ -1,0 +1,8 @@
+/vendor/
+/node_modules/
+.env
+/public/uploads/
+/storage/logs/app.log
+/storage/logs/error.log
+/storage/cache/
+composer.lock
