@@ -1,4 +1,9 @@
 RewriteEngine On
+
+# API Requests
+RewriteRule ^api/(.*)$ api.php?url=$1 [L,QSA]
+
+# Web App Requests
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]

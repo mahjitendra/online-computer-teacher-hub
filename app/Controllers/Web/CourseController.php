@@ -4,6 +4,7 @@ class CourseController extends Controller {
         // Middleware to ensure user is logged in can be added here
         $this->courseModel = $this->model('Course');
         $this->enrollmentModel = $this->model('Enrollment');
+        $this->examModel = $this->model('Exam');
     }
 
     // List all available courses
@@ -25,10 +26,12 @@ class CourseController extends Controller {
             $isEnrolled = $this->enrollmentModel->isStudentEnrolled($_SESSION['user_id'], $id);
         }
 
+        $exams = $this->examModel->getExamsByCourse($id);
+
         $data = [
             'course' => $course,
-            'isEnrolled' => $isEnrolled
-            // We'll add tutorials to this data later
+            'isEnrolled' => $isEnrolled,
+            'exams' => $exams
         ];
 
         $this->view('pages/frontend/course_details', $data);

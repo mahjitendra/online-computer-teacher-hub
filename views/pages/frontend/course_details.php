@@ -13,21 +13,38 @@
     <div class="enroll-section">
         <?php if(isset($_SESSION['user_id'])) : ?>
             <?php if($data['isEnrolled']) : ?>
-                <p class="enrolled-message">You are already enrolled in this course.</p>
+                <p class="enrolled-message">You are enrolled in this course.</p>
             <?php else : ?>
-                <form action="<?php echo URLROOT; ?>/student/courses/enroll/<?php echo $data['course']->id; ?>" method="post">
-                    <input type="submit" value="Enroll Now" class="btn-primary btn-lg">
-                </form>
+                <a href="<?php echo URLROOT; ?>/payment/checkout/<?php echo $data['course']->id; ?>" class="btn-primary btn-lg">Buy Now</a>
             <?php endif; ?>
         <?php else : ?>
-            <p>Please <a href="<?php echo URLROOT; ?>/auth/login">login</a> to enroll in this course.</p>
+            <p>Please <a href="<?php echo URLROOT; ?>/auth/login">login</a> to purchase this course.</p>
         <?php endif; ?>
     </div>
 
-    <!-- Future section for tutorials -->
-    <div class="tutorials-section">
+    <!-- Tutorials & Exams Section -->
+    <div class="course-content-section">
         <h2>Course Content</h2>
-        <p>Tutorials will be listed here once you are enrolled.</p>
+        <?php if($data['isEnrolled']): ?>
+            <!-- Tutorials would be listed here -->
+
+            <h3>Exams</h3>
+            <?php if(!empty($data['exams'])): ?>
+                <ul>
+                    <?php foreach($data['exams'] as $exam): ?>
+                        <li>
+                            <?php echo $exam->title; ?>
+                            <a href="<?php echo URLROOT; ?>/student/exams/take/<?php echo $exam->id; ?>" class="btn-secondary">Take Exam</a>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+            <?php else: ?>
+                <p>No exams have been added to this course yet.</p>
+            <?php endif; ?>
+
+        <?php else: ?>
+            <p>You must be enrolled to view the course content and exams.</p>
+        <?php endif; ?>
     </div>
 </div>
 

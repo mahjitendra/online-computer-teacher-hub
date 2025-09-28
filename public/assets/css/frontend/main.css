@@ -275,3 +275,172 @@ footer p {
     padding: 1rem 2rem;
     font-size: 1.25rem;
 }
+
+/* Exam Management & Taking */
+.exam-header, .result-summary {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.questions-list ul {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.questions-list li {
+    background: #f9f9f9;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.questions-list .correct-answer {
+    font-weight: bold;
+    color: #28a745;
+}
+
+.add-question-form, .exam-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    color: #333;
+}
+
+.option-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.question-block {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.options .option {
+    margin-bottom: 0.5rem;
+}
+
+.options .option label {
+    margin-left: 0.5rem;
+}
+
+.result-container {
+    text-align: center;
+}
+
+.pass-message, .fail-message {
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+.pass-message {
+    background: #e9f7ef;
+    color: #155724;
+}
+
+.fail-message {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* Job Board */
+.job-board-container, .job-details-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 2rem auto;
+    color: #333;
+}
+
+.job-board-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.job-listings {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.job-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.job-company {
+    font-weight: bold;
+}
+
+.job-location {
+    color: #666;
+}
+
+.job-category {
+    background: #eee;
+    color: #333;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    display: inline-block;
+}
+
+.job-details-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.success-message {
+    background: #e9f7ef;
+    color: #155724;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Checkout Page */
+.checkout-container {
+    width: 90%;
+    max-width: 500px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    color: #333;
+}
+
+.course-summary {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+.course-summary .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#card-element {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+}

@@ -13,8 +13,12 @@ spl_autoload_register(function($className){
         __DIR__ . '/Models/User/' . $className . '.php',
         __DIR__ . '/Models/Course/' . $className . '.php',
         __DIR__ . '/Models/Enrollment/' . $className . '.php',
+        __DIR__ . '/Models/Job/' . $className . '.php',
+        __DIR__ . '/Models/Payment/' . $className . '.php',
+        __DIR__ . '/Models/Exam/' . $className . '.php',
         __DIR__ . '/Controllers/Web/' . $className . '.php',
-        __DIR__ . '/Controllers/Teacher/' . $className . '.php'
+        __DIR__ . '/Controllers/Teacher/' . $className . '.php',
+        __DIR__ . '/Controllers/Api/' . $className . '.php'
     ];
 
     foreach ($paths as $path) {
