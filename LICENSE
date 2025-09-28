@@ -61,11 +61,15 @@ This project includes several third-party libraries and components:
 
 This project uses icons from:
 - Font Awesome (https://fontawesome.com) - Font Awesome Free License
+)
 - Heroicons (https://heroicons.com) - MIT License
+)
 
 Stock photos and images from:
 - Unsplash (https://unsplash.com) - Unsplash License
+)
 - Pexels (https://pexels.com) - Pexels License
+)
 
 ---
 
@@ -79,7 +83,7 @@ For questions about licensing, please contact:
 
 ## Disclaimer
 
-This software is provided "as is" without warranty of any kind. The authors and contributors are not responsible for any damages or issues that may arise from the use of this software.
+This software is provided "as is\" without warranty of any kind. The authors and contributors are not responsible for any damages or issues that may arise from the use of this software.
 
 Users are responsible for ensuring compliance with all applicable laws and regulations when using this software, including but not limited to:
 - Data protection and privacy laws (GDPR, CCPA, etc.)
