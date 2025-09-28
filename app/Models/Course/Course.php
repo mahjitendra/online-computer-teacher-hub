@@ -48,7 +48,7 @@ class Course {
         $this->db->bind(':category_id', $data['category_id']);
         $this->db->bind(':title', $data['title']);
         $this->db->bind(':description', $data['description']);
-        $this->db-bind(':price', $data['price']);
+        $this->db->bind(':price', $data['price']);
 
         // Execute
         if($this->db->execute()){

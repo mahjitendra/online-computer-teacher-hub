@@ -1,0 +1,60 @@
+{
+  "name": "online-computer-teacher-hub",
+  "version": "1.0.0",
+  "description": "A comprehensive online platform for computer science education",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production",
+    "build:css": "sass public/assets/scss:public/assets/css --watch",
+    "minify:js": "uglifyjs public/assets/js/**/*.js -o public/assets/js/app.min.js",
+    "minify:css": "cleancss -o public/assets/css/app.min.css public/assets/css/**/*.css",
+    "optimize": "npm run build && npm run minify:js && npm run minify:css",
+    "test": "jest",
+    "lint": "eslint public/assets/js/**/*.js",
+    "format": "prettier --write public/assets/js/**/*.js"
+  },
+  "keywords": [
+    "education",
+    "online-learning",
+    "computer-science",
+    "courses",
+    "exams",
+    "jobs"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.22.0",
+    "@babel/preset-env": "^7.22.0",
+    "babel-loader": "^9.1.0",
+    "clean-css-cli": "^5.6.0",
+    "css-loader": "^6.8.0",
+    "eslint": "^8.42.0",
+    "jest": "^29.5.0",
+    "mini-css-extract-plugin": "^2.7.0",
+    "prettier": "^2.8.0",
+    "sass": "^1.63.0",
+    "sass-loader": "^13.3.0",
+    "style-loader": "^3.3.0",
+    "uglify-js": "^3.17.0",
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.0"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "chart.js": "^4.3.0",
+    "datatables.net": "^1.13.0",
+    "datatables.net-dt": "^1.13.0",
+    "jquery": "^3.7.0",
+    "moment": "^2.29.0",
+    "select2": "^4.1.0",
+    "sweetalert2": "^11.7.0",
+    "video.js": "^8.3.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

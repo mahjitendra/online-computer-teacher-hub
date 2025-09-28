@@ -1,0 +1,95 @@
+MIT License
+
+Copyright (c) 2024 Online Computer Teacher Hub
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## Third-Party Licenses
+
+This project includes several third-party libraries and components:
+
+### PHP Libraries
+- **PHPUnit**: BSD-3-Clause License
+- **Composer**: MIT License
+
+### JavaScript Libraries
+- **jQuery**: MIT License
+- **Bootstrap**: MIT License
+- **Chart.js**: MIT License
+- **Video.js**: Apache License 2.0
+- **SweetAlert2**: MIT License
+- **DataTables**: MIT License
+
+### CSS Frameworks
+- **Bootstrap**: MIT License
+- **Font Awesome**: Font Awesome Free License
+
+### Build Tools
+- **Webpack**: MIT License
+- **Babel**: MIT License
+- **Sass**: MIT License
+
+### Payment Gateways
+- **Stripe**: Stripe Terms of Service
+- **PayPal**: PayPal Developer Agreement
+
+### Other Services
+- **Google Analytics**: Google Analytics Terms of Service
+- **Google Fonts**: SIL Open Font License
+
+---
+
+## Attribution
+
+This project uses icons from:
+- Font Awesome (https://fontawesome.com) - Font Awesome Free License
+- Heroicons (https://heroicons.com) - MIT License
+
+Stock photos and images from:
+- Unsplash (https://unsplash.com) - Unsplash License
+- Pexels (https://pexels.com) - Pexels License
+
+---
+
+## Contact
+
+For questions about licensing, please contact:
+- Email: legal@onlinecomputerteacherhub.com
+- Website: https://onlinecomputerteacherhub.com
+
+---
+
+## Disclaimer
+
+This software is provided "as is" without warranty of any kind. The authors and contributors are not responsible for any damages or issues that may arise from the use of this software.
+
+Users are responsible for ensuring compliance with all applicable laws and regulations when using this software, including but not limited to:
+- Data protection and privacy laws (GDPR, CCPA, etc.)
+- Educational regulations
+- Payment processing regulations
+- Accessibility requirements
+- Content licensing requirements
+
+---
+
+## Contributing
+
+By contributing to this project, you agree that your contributions will be licensed under the same MIT License that covers the project.
